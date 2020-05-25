@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
+}
+
+group 'com.legyver'
+version = "1.0.0.0"
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile group: 'com.legyver', name: 'fenxlib', version: '1.0.0.0'
+	compile group: 'com.legyver', name: 'tuktukfx', version: '1.0.0.0'
+	
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    testCompile group: 'junit', name: 'junit', version: '4.13-beta-3'
+    testCompile group: 'org.testfx', name: 'testfx-junit', version: '4.0.16-alpha'
+    testCompile group: 'junit-addons', name: 'junit-addons', version: '1.4'
+}
+
+publishing {
+    publications {
+        fenxlib(MavenPublication) {
+            artifactId 'fenxlib-tuktukfx'
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+task install(dependsOn: "publishToMavenLocal")
