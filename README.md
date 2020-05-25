@@ -58,6 +58,7 @@ public class ApplicationOptions extends TukTukFxApplicationOptions<ApplicationUI
     }
 }
 ```
+
 ####BindingFactory
 Binding factory for registering UI Components extends the TaskBindingFactory to leverage the abort functionality
 ```java
@@ -67,6 +68,7 @@ public class BindingFactory extends TaskBindingFactory {
     }
 }
 ```
+
 ###ExampleAbortableTask
 Extends AbortableTask so the framework can notify is on cancel.  This extends javafx.concurrent.Task and ultimately Runnable so it can be submitted to the thread-pool
 ```java
@@ -76,6 +78,7 @@ public class ExampleAbortableTask<T> extends AbortableTask<T> {
     }
 }
 ```
+
 ####ExampleTaskWorker
 The wrappedClass that contains the executable code.
 The responsibility of this class is to allow the TaskProcessor to leverage the ProtoTaskFlow of the TukTukFX framework.
@@ -100,6 +103,7 @@ public class ExampleTaskWorker extends AbstractObservableTask<Void, ExampleTaskA
     }
 }
 ```
+
 ####ExampleTaskProcessor
 The work to be done in the task.  The example below has a long-running loop that shuts down if the application exits.
 ```java
@@ -113,6 +117,7 @@ public class ExampleTaskProcessor implements TaskProcessor<ExampleTaskArgs> {
     }
 }
 ```
+
 ####ExampleApplication
 ```java
 public class ExampleApplication extends Application {
