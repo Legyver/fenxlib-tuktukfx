@@ -9,10 +9,8 @@ Fenxlib extension to support the TukTukFx task-running framework
 ### Built With
 * OpenJDK8
 * OpenJFX8
-* fenxlib
-* [TestFX](https://github.com/TestFX/TestFX)
-* [JUnit](https://junit.org/junit4/)
-* [Hamcrest](http://hamcrest.org/JavaHamcrest/)
+* Fenxlib
+* TukTukFX
 ### Prerequisites
 * A Java8 JDK with JavaFX (Amazon Corretto, ZuluFX, etc)
  
