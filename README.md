@@ -3,7 +3,7 @@ Fenxlib extension to support the TukTukFx task-running framework
 ## Table of Contents
 - [Installation](#installation)
 - [Features](#features)
-- [Features](#example)
+- [Example](#example)
 - [License](#licensing)
 ## Installation
 ### Built With
@@ -49,7 +49,7 @@ ApplicationOptions that allows for exiting the app to
 ### ApplicationOptions
 Base fenxlib hook for
  * Where to load your settings from (Here, "${user.home}/.appDir")
- * Conversion to for the Map to your config
+ * Conversion to convert the settings Map to your config POJO
  * JavaFX primary stage
  * UIModel 
  
