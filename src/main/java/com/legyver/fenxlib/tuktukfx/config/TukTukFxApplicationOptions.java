@@ -1,9 +1,9 @@
 package com.legyver.fenxlib.tuktukfx.config;
 
+import com.legyver.fenxlib.config.ApplicationConfigInstantiator;
+import com.legyver.fenxlib.config.options.FileBasedApplicationOptions;
 import com.legyver.fenxlib.tuktukfx.task.exec.TaskExecutor;
 import com.legyver.fenxlib.uimodel.RecentFileAware;
-import com.legyver.fenxlib.util.ApplicationConfigInstantiator;
-import com.legyver.fenxlib.util.FileBasedApplicationOptions;
 import com.legyver.fenxlib.util.hook.LifecycleHook;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
