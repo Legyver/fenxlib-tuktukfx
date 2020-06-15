@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.legyver'
-version = "1.1.0.0"
+version = "1.1.1.0"
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
@@ -16,8 +16,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.legyver', name: 'fenxlib', version: '1.1.0.0'
-	compile group: 'com.legyver', name: 'tuktukfx', version: '1.0.0.0'
+    compile group: 'com.legyver', name: 'fenxlib', version: '1.1.1.0'
+    compile group: 'com.legyver', name: 'tuktukfx', version: '1.0.0.0'
 }
 
 publishing {
